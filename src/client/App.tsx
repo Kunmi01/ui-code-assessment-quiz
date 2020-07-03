@@ -1,8 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Questions from "./components/Questions";
+import GlobalStyle from "./globalStyles";
+import * as S from "./AppStyles";
 
 export const App = () => (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <h1>Lucid</h1>
-        <h2>Welcome to UI Team code assessment!</h2>
-    </div>
+  <S.AppContainer>
+    <GlobalStyle />
+    <Header />
+    <Questions />
+  </S.AppContainer>
 );
