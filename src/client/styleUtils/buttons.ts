@@ -10,12 +10,12 @@ export const defaultButtonStyle: any = css`
   font-family: ${fonts.playBold};
   font-size: ${fontSizes.m};
   color: ${colors.textDark};
-  opacity: 0.66;
+  opacity: 0.8;
   padding: ${unit * 2}px ${unit * 4}px;
   cursor: pointer;
 
   &:hover {
-    opacity: 0.88;
+    opacity: 1;
   }
 
   &.disabled {

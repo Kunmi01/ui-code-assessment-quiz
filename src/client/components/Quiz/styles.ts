@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
   unit,
   colors,
   sectionWrapperStyle,
   defaultButtonStyle,
-} from "../../styleUtils";
+} from '../../styleUtils';
 
 export const Container = styled.div`
   ${sectionWrapperStyle}

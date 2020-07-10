@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import * as S from "./styles";
+import React, { useEffect } from 'react';
+import * as S from './styles';
 
-const QUESTIONS_API_URL = "http://localhost:4000/api/questions";
+const QUESTIONS_API_URL = 'http://localhost:4000/api/questions';
 
-const Questions = () => {
+const Quiz = () => {
   const getQuestionsData = async () => {
     try {
       const data = await (await fetch(QUESTIONS_API_URL)).json();
@@ -16,7 +16,7 @@ const Questions = () => {
 
   const initializeQuiz = async () => {
     const questionsData = await getQuestionsData();
-    console.log("questionsData", questionsData);
+    console.log('questionsData', questionsData);
   };
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const Questions = () => {
   );
 };
 
-export default Questions;
+export default Quiz;

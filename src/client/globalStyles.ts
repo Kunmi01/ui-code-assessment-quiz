@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { colors, fontFace, fonts, fontSizes } from "./styleUtils";
+import { createGlobalStyle } from 'styled-components';
+import { colors, fontFace, fonts, fontSizes } from './styleUtils';
 
 const GlobalStyle: any = createGlobalStyle`
   /***** CSS Reset START *****/
@@ -40,8 +40,8 @@ const GlobalStyle: any = createGlobalStyle`
   /***** CSS Reset END *****/
 
   /***** Typography START *****/
-  ${fontFace("PlayRegular", "./assets/fonts/play-regular/play-regular")}
-  ${fontFace("PlayBold", "./assets/fonts/play-bold/play-bold")}
+  ${fontFace('PlayRegular', './assets/fonts/play-regular/play-regular')}
+  ${fontFace('PlayBold', './assets/fonts/play-bold/play-bold')}
 
   h1 {
     font-size: ${fontSizes.xxxl};
